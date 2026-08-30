@@ -4,7 +4,7 @@ const projects = [
   { name: "CV Generator", description: "A practical web app that helps users create professional resumes quickly.", stack: "Python · Django", href: "https://github.com/dilali-pk/cv-generator" },
 ];
 
-const skills = ["Python", "Django", "Django REST", "JavaScript", "React", "HTML & CSS", "MySQL", "Git & GitHub"];
+const skills = ["Oracle NetSuite", "SuiteScript 2.x", "SuiteFlow", "Saved Searches", "SuiteAnalytics", "RESTlets", "JavaScript", "ERP Integrations"];
 
 export default function Home() {
   return (
@@ -18,8 +18,8 @@ export default function Home() {
         <div className="heroCopy">
           <p className="eyebrow">Hello, I’m</p>
           <h1>Dilshad Ali</h1>
-          <h2>Web developer crafting useful digital experiences.</h2>
-          <p className="intro">I build clean, reliable web applications with Python, Django and modern frontend technologies—turning ideas into products people can actually use.</p>
+          <h2>NetSuite developer improving the way businesses work.</h2>
+          <p className="intro">I customize and extend Oracle NetSuite with SuiteScript, workflows and integrations—turning business requirements into reliable ERP solutions.</p>
           <div className="actions">
             <a className="primary" href="#work">View my work</a>
             <a className="secondary" href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -27,14 +27,14 @@ export default function Home() {
         </div>
         <div className="portrait" aria-label="Dilshad Ali monogram">
           <div className="orbit orbitOne" /><div className="orbit orbitTwo" />
-          <span>DA</span><p>Developer<br />&amp; Creator</p>
+          <span>DA</span><p>NetSuite<br />Developer</p>
         </div>
       </section>
 
       <section className="about section" id="about">
-        <div><p className="sectionLabel">01 / About</p><h2>I enjoy solving real problems with thoughtful code.</h2></div>
+        <div><p className="sectionLabel">01 / About</p><h2>I build NetSuite solutions around real business needs.</h2></div>
         <div className="aboutText">
-          <p>I’m a developer focused on practical web products, robust APIs and clear user experiences. My work combines backend development with a sharp eye for simple, accessible interfaces.</p>
+          <p>I’m a NetSuite developer focused on ERP customization, process automation, reporting and system integrations. I use SuiteScript and native NetSuite tools to make finance and operations workflows simpler, faster and more reliable.</p>
           <div className="skillList">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
         </div>
       </section>

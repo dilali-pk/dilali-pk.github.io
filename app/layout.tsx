@@ -7,17 +7,17 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://dilali-pk.github.io"),
-  title: "Dilshad Ali — Web Developer",
-  description: "Portfolio of Dilshad Ali, a web developer specializing in Python, Django and modern web experiences.",
+  title: "Dilshad Ali — NetSuite Developer",
+  description: "Portfolio of Dilshad Ali, a NetSuite developer specializing in SuiteScript, automation, reporting and ERP integrations.",
   openGraph: {
-    title: "Dilshad Ali — Web Developer",
-    description: "Clean, reliable web applications built with Python, Django and modern frontend technologies.",
-    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Dilshad Ali — Web Developer" }],
+    title: "Dilshad Ali — NetSuite Developer",
+    description: "Reliable NetSuite customization, automation, reporting and ERP integrations.",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "Dilshad Ali — NetSuite Developer" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dilshad Ali — Web Developer",
-    description: "Clean, reliable web applications built with Python, Django and modern frontend technologies.",
+    title: "Dilshad Ali — NetSuite Developer",
+    description: "Reliable NetSuite customization, automation, reporting and ERP integrations.",
     images: ["/og.png"],
   },
 };
