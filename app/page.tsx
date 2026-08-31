@@ -1,65 +1,85 @@
-const projects = [
-  { name: "Hospital API", description: "A Django REST API for managing appointments between doctors and patients.", stack: "Python · Django REST Framework", href: "https://github.com/dilali-pk/hospital-api" },
-  { name: "Task Manager", description: "A focused to-do application for organizing tasks and staying productive.", stack: "Django · HTML · CSS", href: "https://github.com/dilali-pk/todo-list" },
-  { name: "CV Generator", description: "A practical web app that helps users create professional resumes quickly.", stack: "Python · Django", href: "https://github.com/dilali-pk/cv-generator" },
-];
-
-const skills = ["Oracle NetSuite", "SuiteScript 2.x", "SuiteFlow", "Saved Searches", "SuiteAnalytics", "RESTlets", "JavaScript", "ERP Integrations"];
-
 export default function Home() {
   return (
     <main>
-      <nav className="nav" aria-label="Main navigation">
-        <a className="brand" href="#home" aria-label="Dilshad Ali home">DA<span>.</span></a>
-        <div className="navLinks"><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div>
-      </nav>
+      <header className="siteHeader">
+        <a className="logo" href="#home" aria-label="Dilshad Ali home">
+          <span className="logoPhoto"><img src="/dilshad-ali.png" alt="Dilshad Ali" /></span>
+          <span className="logoMark">DA</span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a className="active" href="#home">Home</a>
+          <a href="#features">Features</a>
+          <a href="#contact">Contact</a>
+          <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Hire Me</a>
+        </nav>
+        <a className="headerButton" href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub</a>
+      </header>
 
       <section className="hero" id="home">
-        <div className="heroCopy">
-          <p className="eyebrow">Hello, I’m</p>
-          <h1>Dilshad Ali</h1>
-          <h2>NetSuite developer improving the way businesses work.</h2>
-          <p className="intro">I customize and extend Oracle NetSuite with SuiteScript, workflows and integrations—turning business requirements into reliable ERP solutions.</p>
-          <div className="actions">
-            <a className="primary" href="#work">View my work</a>
-            <a className="secondary" href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <div className="heroLeft">
+          <div className="softCard heroIntro">
+            <p className="welcome">Welcome to my world</p>
+            <h1>Hi, I’m <span>Dilshad</span></h1>
+            <h2><b>a</b> NetSuite Developer.</h2>
+            <p className="lead">I use Oracle NetSuite ERP to transform complex business processes into smooth, reliable solutions. I build tailored SuiteScript customizations, workflows and integrations that support real operational needs.</p>
+            <div className="quickFacts">
+              <p><span>▣</span> NetSuite Developer &amp; SuiteScript Specialist</p>
+              <p><span>⌘</span> Available for remote NetSuite projects</p>
+              <p><span>⌖</span> Pakistan</p>
+            </div>
+          </div>
+          <div className="softCard heroActions">
+            <p>Explore my work and experience:</p>
+            <div><a href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">View GitHub</a><a href="#contact">Contact Me</a></div>
           </div>
         </div>
-        <div className="portrait" aria-label="Dilshad Ali monogram">
-          <div className="orbit orbitOne" /><div className="orbit orbitTwo" />
-          <span>DA</span><p>NetSuite<br />Developer</p>
+        <div className="softCard portraitCard">
+          <img src="/dilshad-ali.png" alt="Dilshad Ali working at his computer" />
         </div>
       </section>
 
-      <section className="about section" id="about">
-        <div><p className="sectionLabel">01 / About</p><h2>I build NetSuite solutions around real business needs.</h2></div>
-        <div className="aboutText">
-          <p>I’m a NetSuite developer focused on ERP customization, process automation, reporting and system integrations. I use SuiteScript and native NetSuite tools to make finance and operations workflows simpler, faster and more reliable.</p>
-          <div className="skillList">{skills.map((skill) => <span key={skill}>{skill}</span>)}</div>
-        </div>
-      </section>
-
-      <section className="section projects" id="work">
-        <p className="sectionLabel">02 / Selected work</p>
-        <div className="projectGrid">
-          {projects.map((project, index) => (
-            <a className="projectCard" href={project.href} target="_blank" rel="noreferrer" key={project.name}>
-              <div className="projectTop"><span>0{index + 1}</span><span>↗</span></div>
-              <h3>{project.name}</h3><p>{project.description}</p><small>{project.stack}</small>
-            </a>
+      <section className="contentSection" id="features">
+        <div className="sectionHeading"><p>Features</p><h2>What I Do</h2></div>
+        <div className="featureGrid">
+          {[
+            ["01", "SuiteScript Development", "Custom scripts that automate processes and extend NetSuite around your business requirements."],
+            ["02", "NetSuite Integrations", "Reliable connections between NetSuite and third-party platforms using RESTlets and web services."],
+            ["03", "SuiteFlow Automation", "Approval flows and automated workflows that reduce manual work across finance and operations."],
+            ["04", "Dashboards & Reporting", "Role-based dashboards, KPIs, saved searches and reports that turn data into useful insight."],
+            ["05", "Data Migration", "Structured import, mapping, validation and cleanup for a dependable move into NetSuite."],
+            ["06", "SuiteAnalytics", "Workbooks, datasets and analytics configurations designed for clearer business decisions."],
+          ].map(([icon, title, text]) => (
+            <article className="softCard featureCard" key={title}>
+              <span className="featureIcon">{icon}</span><h3>{title}</h3><p>{text}</p><span className="arrow">→</span>
+            </article>
           ))}
         </div>
       </section>
 
-      <section className="contact section" id="contact">
-        <p className="sectionLabel">03 / Contact</p><h2>Have a project in mind?<br />Let’s build it together.</h2>
-        <div className="contactLinks">
-          <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Fiverr ↗</a>
-          <a href="https://www.freelancer.com/u/dilalipk" target="_blank" rel="noreferrer">Freelancer ↗</a>
-          <a href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
+      <section className="contentSection" id="contact">
+        <div className="sectionHeading"><p>Contact</p><h2>Contact With Me</h2></div>
+        <div className="contactGrid">
+          <aside className="softCard contactCard">
+            <img src="/dilshad-ali.png" alt="Dilshad Ali" />
+            <h3>Dilshad Ali</h3><p className="role">NetSuite Developer</p>
+            <p>I am available for freelance and remote NetSuite work. Connect with me through one of my professional profiles.</p>
+            <div className="contactButtons">
+              <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Fiverr ↗</a>
+              <a href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Upwork ↗</a>
+              <a href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
+            </div>
+          </aside>
+          <div className="softCard contactForm">
+            <div className="fieldRow"><label>Your Name<input type="text" name="name" placeholder="Name" /></label><label>Phone Number<input type="tel" name="phone" placeholder="Phone" /></label></div>
+            <label>Email<input type="email" name="email" placeholder="Email address" /></label>
+            <label>Subject<input type="text" name="subject" placeholder="NetSuite project" /></label>
+            <label>Your Message<textarea name="message" rows={5} placeholder="Tell me about your requirements" /></label>
+            <a className="sendButton" href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Send Message →</a>
+          </div>
         </div>
       </section>
-      <footer><span>© 2026 Dilshad Ali</span><span>Designed &amp; built with care.</span></footer>
+
+      <footer><a className="footerLogo" href="#home">DA</a><p>You could be anywhere on the internet, yet you’re here. Thanks for visiting!</p><span>© 2026 Dilshad Ali</span></footer>
     </main>
   );
 }
