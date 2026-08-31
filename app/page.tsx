@@ -103,7 +103,6 @@ export default function Home() {
               <a className="linkedinButton" href="https://www.linkedin.com/in/dilalipk" target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Fiverr ↗</a>
               <a href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Upwork ↗</a>
-              <a href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
             </div>
           </aside>
           <div className="softCard contactForm emailCard">

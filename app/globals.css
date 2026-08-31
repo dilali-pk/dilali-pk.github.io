@@ -80,8 +80,8 @@ nav a:hover,nav a.active { color:var(--blue); }
 .contactForm input:focus,.contactForm textarea:focus { border-color:var(--blue); }
 .sendButton { display:flex; align-items:center; justify-content:center; min-height:50px; border-radius:6px; color:var(--blue); text-transform:uppercase; font-size:12px; font-weight:750; box-shadow:6px 6px 13px var(--shadow-dark),-6px -6px 13px var(--shadow-light); }
 footer { width:min(1050px,calc(100% - 48px)); margin:40px auto 0; padding:60px 0 45px; border-top:1px solid rgba(80,90,99,.15); display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; color:var(--muted); font-size:13px; }
-.footerLogo { width:180px; height:125px; padding:10px; border-radius:12px; display:grid; place-items:center; overflow:hidden; background:linear-gradient(145deg,#f7fbfe,#e6f0f5); box-shadow:6px 6px 13px var(--shadow-dark),-6px -6px 13px var(--shadow-light); }
-.footerLogo img { width:160px; height:auto; display:block; object-fit:contain; mix-blend-mode:multiply; }
+.footerLogo { width:105px; height:78px; display:grid; place-items:center; overflow:hidden; }
+.footerLogo img { width:100px; height:auto; display:block; object-fit:contain; mix-blend-mode:multiply; }
 footer p { margin:6px 0 0; }
 footer span { font-size:11px; }
 @media(max-width:900px){
