@@ -49,6 +49,8 @@ export default function Home() {
             ["05", "Data Migration", "I help clean, map and import data carefully, then check the results so the new records are ready to use."],
             ["06", "SuiteAnalytics", "I prepare workbooks and datasets that give finance and operations teams a clearer view of their NetSuite data."],
             ["07", "AI Automation", "I connect practical AI tools with NetSuite processes to classify information, prepare summaries and reduce repetitive manual work—with the right review steps in place."],
+            ["08", "Web Development", "I build responsive, easy-to-use business websites with clean layouts, clear content and dependable performance across desktop and mobile devices."],
+            ["09", "WordPress Development", "I create and customize WordPress websites, including business pages, theme adjustments, content updates, speed improvements and ongoing maintenance."],
           ].map(([icon, title, text]) => (
             <article className="softCard featureCard" key={title}>
               <span className="featureIcon">{icon}</span><h3>{title}</h3><p>{text}</p><span className="arrow">→</span>
