@@ -9,7 +9,7 @@ export default function Home() {
           <a className="active" href="#home">Home</a>
           <a href="#features">Features</a>
           <a href="#contact">Contact</a>
-          <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Hire Me</a>
+          <a href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Hire Me</a>
         </nav>
         <a className="headerButton" href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub</a>
       </header>
