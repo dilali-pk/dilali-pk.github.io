@@ -8,6 +8,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a className="active" href="#home">Home</a>
           <a href="#features">Services</a>
+          <a href="#process">Process</a>
           <a href="#contact">Contact</a>
           <a href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Hire Me</a>
         </nav>
@@ -47,11 +48,47 @@ export default function Home() {
             ["04", "Searches & Reporting", "I create saved searches, KPIs and dashboards so teams can find the information they need without digging through records."],
             ["05", "Data Migration", "I help clean, map and import data carefully, then check the results so the new records are ready to use."],
             ["06", "SuiteAnalytics", "I prepare workbooks and datasets that give finance and operations teams a clearer view of their NetSuite data."],
+            ["07", "AI Automation", "I connect practical AI tools with NetSuite processes to classify information, prepare summaries and reduce repetitive manual work—with the right review steps in place."],
           ].map(([icon, title, text]) => (
             <article className="softCard featureCard" key={title}>
               <span className="featureIcon">{icon}</span><h3>{title}</h3><p>{text}</p><span className="arrow">→</span>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className="contentSection processSection" id="process">
+        <div className="sectionHeading"><p>How It Works</p><h2>A Clear, Practical Process</h2></div>
+        <p className="sectionIntro">Every project starts with the business problem—not the technology. I keep the work transparent, test it carefully and make sure your team understands the final solution.</p>
+        <div className="processGrid">
+          {[
+            ["01", "Understand", "We discuss the current process, the people involved and the result you want from NetSuite."],
+            ["02", "Plan", "I map the data, automation steps, permissions and possible exceptions before development begins."],
+            ["03", "Build & Test", "I develop the solution in manageable parts, test real scenarios and share progress along the way."],
+            ["04", "Launch & Support", "After approval, I help move it live, explain how it works and support any final adjustments."],
+          ].map(([number, title, text]) => (
+            <article className="softCard processCard" key={number}>
+              <span>{number}</span><h3>{title}</h3><p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="contentSection useCaseSection" id="use-cases">
+        <div className="sectionHeading"><p>Use Cases</p><h2>Where Automation Can Help</h2></div>
+        <div className="useCaseGrid">
+          <article className="softCard useCaseCard">
+            <p className="useCaseLabel">Finance Operations</p>
+            <h3>AI-Assisted Vendor Bill Processing</h3>
+            <p>Invoice details can be extracted and prepared for NetSuite, while duplicate checks, missing fields and unusual amounts are flagged for a person to review before posting.</p>
+            <div className="flowLine"><span>Invoice received</span><b>→</b><span>Data checked</span><b>→</b><span>Human approval</span><b>→</b><span>NetSuite</span></div>
+          </article>
+          <article className="softCard useCaseCard">
+            <p className="useCaseLabel">Sales & Operations</p>
+            <h3>Order Exception Summaries</h3>
+            <p>Instead of reviewing every order manually, an automation can identify holds, stock issues or unusual changes and prepare a clear summary so the team knows what needs attention first.</p>
+            <div className="flowLine"><span>Order data</span><b>→</b><span>Exceptions found</span><b>→</b><span>Summary sent</span><b>→</b><span>Team action</span></div>
+          </article>
         </div>
       </section>
 

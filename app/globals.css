@@ -43,6 +43,22 @@ nav a:hover,nav a.active { color:var(--blue); }
 .featureCard h3 { margin:0 0 15px; font-size:22px; line-height:1.2; letter-spacing:-.03em; }
 .featureCard p { margin:0; color:var(--muted); font-size:14px; line-height:1.6; }
 .arrow { position:absolute; left:34px; bottom:25px; color:var(--blue); font-size:22px; }
+.sectionIntro { max-width:720px; margin:-22px 0 38px; color:var(--muted); font-size:16px; line-height:1.7; }
+.processSection { padding-top:95px; }
+.processGrid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.processCard { min-height:250px; padding:30px 26px; position:relative; }
+.processCard>span { display:inline-grid; place-items:center; width:42px; height:42px; margin-bottom:35px; border-radius:50%; color:var(--blue); font:750 13px var(--font-geist-mono),monospace; box-shadow:inset 3px 3px 7px var(--shadow-dark),inset -3px -3px 7px var(--shadow-light); }
+.processCard h3 { margin:0 0 12px; font-size:21px; }
+.processCard p { margin:0; color:var(--muted); font-size:13px; line-height:1.65; }
+.useCaseSection { padding-top:70px; }
+.useCaseGrid { display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+.useCaseCard { padding:38px; }
+.useCaseLabel { margin:0 0 15px; color:var(--blue); font-size:11px; font-weight:750; letter-spacing:.12em; text-transform:uppercase; }
+.useCaseCard h3 { margin:0 0 16px; font-size:28px; letter-spacing:-.03em; }
+.useCaseCard>p:not(.useCaseLabel) { margin:0; color:var(--muted); font-size:14px; line-height:1.7; }
+.flowLine { display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-top:28px; padding-top:24px; border-top:1px solid rgba(20,127,189,.13); }
+.flowLine span { padding:8px 10px; border-radius:7px; background:rgba(255,255,255,.35); color:#445565; font-size:10px; font-weight:700; }
+.flowLine b { color:var(--blue); font-size:13px; }
 .contactGrid { display:grid; grid-template-columns:.72fr 1.28fr; gap:28px; }
 .contactCard,.contactForm { padding:30px; }
 .contactCard>img { width:100%; height:230px; object-fit:cover; border-radius:7px; margin-bottom:24px; }
@@ -69,6 +85,6 @@ footer p { margin:6px 0 0; }
 footer span { font-size:11px; }
 @media(max-width:900px){
   .siteHeader{width:calc(100% - 32px);height:auto;padding:22px 0;flex-wrap:wrap}.siteHeader nav{order:3;width:100%;justify-content:center;gap:20px;flex-wrap:wrap}.headerButton{min-height:42px}
-  .hero{width:calc(100% - 32px);grid-template-columns:1fr;margin-top:30px}.portraitCard{min-height:430px}.portraitCard img{max-height:500px}.heroIntro,.heroActions{padding:32px}.contentSection,footer{width:calc(100% - 32px)}.featureGrid{grid-template-columns:repeat(2,1fr)}.contactGrid{grid-template-columns:1fr}
+  .hero{width:calc(100% - 32px);grid-template-columns:1fr;margin-top:30px}.portraitCard{min-height:430px}.portraitCard img{max-height:500px}.heroIntro,.heroActions{padding:32px}.contentSection,footer{width:calc(100% - 32px)}.featureGrid{grid-template-columns:repeat(2,1fr)}.processGrid{grid-template-columns:repeat(2,1fr)}.useCaseGrid,.contactGrid{grid-template-columns:1fr}
 }
-@media(max-width:560px){.hero h1{font-size:38px}.hero h2{font-size:30px}.heroIntro,.heroActions{padding:26px}.heroActions>div{flex-direction:column;gap:14px}.heroActions a{width:100%}.portraitCard{padding:20px;min-height:360px}.siteHeader nav{gap:14px}.siteHeader nav a{font-size:10px}.contentSection{padding:65px 0}.sectionHeading h2{font-size:38px}.featureGrid{grid-template-columns:1fr}.fieldRow{grid-template-columns:1fr}.featureCard{min-height:260px}}
+@media(max-width:560px){.hero h1{font-size:38px}.hero h2{font-size:30px}.heroIntro,.heroActions{padding:26px}.heroActions>div{flex-direction:column;gap:14px}.heroActions a{width:100%}.portraitCard{padding:20px;min-height:360px}.siteHeader nav{gap:14px}.siteHeader nav a{font-size:10px}.contentSection{padding:65px 0}.sectionHeading h2{font-size:38px}.featureGrid,.processGrid{grid-template-columns:1fr}.fieldRow{grid-template-columns:1fr}.featureCard{min-height:260px}.processCard{min-height:auto}.useCaseCard{padding:28px}.flowLine{align-items:flex-start}.flowLine b{padding-top:7px}}
