@@ -61,19 +61,18 @@ export default function Home() {
           <aside className="softCard contactCard">
             <img src="/dilshad-ali.png" alt="Dilshad Ali" />
             <h3>Dilshad Ali</h3><p className="role">NetSuite Developer</p>
-            <p>If you have a NetSuite customization, workflow or integration to discuss, send me a short note through one of my professional profiles.</p>
+            <p>If you have a NetSuite customization, workflow or integration to discuss, email me directly or connect through one of my professional profiles.</p>
             <div className="contactButtons">
               <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Fiverr ↗</a>
               <a href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Upwork ↗</a>
               <a href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
             </div>
           </aside>
-          <div className="softCard contactForm">
-            <div className="fieldRow"><label>Your Name<input type="text" name="name" placeholder="Name" /></label><label>Phone Number<input type="tel" name="phone" placeholder="Phone" /></label></div>
-            <label>Email<input type="email" name="email" placeholder="Email address" /></label>
-            <label>Subject<input type="text" name="subject" placeholder="NetSuite project" /></label>
-            <label>Your Message<textarea name="message" rows={5} placeholder="Tell me about your requirements" /></label>
-            <a className="sendButton" href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Discuss on Upwork →</a>
+          <div className="softCard contactForm emailCard">
+            <p className="emailEyebrow">Direct contact</p>
+            <h3>Let’s talk about your NetSuite requirements</h3>
+            <p>Send me an email with a short overview of what you need. I’ll get back to you as soon as I can.</p>
+            <a className="sendButton" href="mailto:dilalipk@gmail.com">Email me at dilalipk@gmail.com →</a>
           </div>
         </div>
       </section>
