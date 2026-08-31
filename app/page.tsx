@@ -3,8 +3,7 @@ export default function Home() {
     <main>
       <header className="siteHeader">
         <a className="logo" href="#home" aria-label="Dilshad Ali home">
-          <span className="logoPhoto"><img src="/dilshad-ali.png" alt="Dilshad Ali" /></span>
-          <span className="logoMark">DA</span>
+          <img className="brandLogo" src="/dilshad-logo.png" alt="Dilshad Ali logo" />
         </a>
         <nav aria-label="Main navigation">
           <a className="active" href="#home">Home</a>
@@ -79,7 +78,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><a className="footerLogo" href="#home">DA</a><p>You could be anywhere on the internet, yet you’re here. Thanks for visiting!</p><span>© 2026 Dilshad Ali</span></footer>
+      <footer><a className="footerLogo" href="#home"><img src="/dilshad-logo.png" alt="Dilshad Ali logo" /></a><p>You could be anywhere on the internet, yet you’re here. Thanks for visiting!</p><span>© 2026 Dilshad Ali</span></footer>
     </main>
   );
 }
