@@ -100,6 +100,7 @@ export default function Home() {
             <h3>Dilshad Ali</h3><p className="role">NetSuite Developer</p>
             <p>If you have a NetSuite customization, workflow or integration to discuss, email me directly or connect through one of my professional profiles.</p>
             <div className="contactButtons">
+              <a className="linkedinButton" href="https://www.linkedin.com/in/dilalipk" target="_blank" rel="noreferrer">LinkedIn ↗</a>
               <a href="https://www.fiverr.com/users/dilali1" target="_blank" rel="noreferrer">Fiverr ↗</a>
               <a href="https://www.upwork.com/freelancers/~01b9fd4cc496f6fae0" target="_blank" rel="noreferrer">Upwork ↗</a>
               <a href="https://github.com/dilali-pk" target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -114,7 +115,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer><a className="footerLogo" href="#home"><img src="/dilshad-logo.png" alt="Dilshad Ali logo" /></a><p>You could be anywhere on the internet, yet you’re here. Thanks for visiting!</p><span>© 2026 Dilshad Ali</span></footer>
+      <footer><a className="footerLogo" href="#home" aria-label="Back to home"><img src="/dilshad-logo.png" alt="Dilshad Ali logo" /></a><p>You could be anywhere on the internet, yet you’re here. Thanks for visiting!</p><span>© 2026 Dilshad Ali</span></footer>
     </main>
   );
 }

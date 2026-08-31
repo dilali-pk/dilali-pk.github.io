@@ -67,6 +67,7 @@ nav a:hover,nav a.active { color:var(--blue); }
 .contactCard>p:not(.role) { color:var(--muted); font-size:14px; line-height:1.6; }
 .contactButtons { display:flex; gap:10px; flex-wrap:wrap; margin-top:22px; }
 .contactButtons a { padding:10px 12px; border-radius:5px; color:var(--blue); font-size:11px; font-weight:700; box-shadow:4px 4px 9px var(--shadow-dark),-4px -4px 9px var(--shadow-light); }
+.contactButtons .linkedinButton { background:#0a66c2; color:#fff; box-shadow:5px 5px 11px var(--shadow-dark),-3px -3px 9px var(--shadow-light); }
 .contactForm { display:flex; flex-direction:column; gap:18px; }
 .emailCard { justify-content:center; min-height:390px; padding:clamp(34px,6vw,72px); }
 .emailCard .emailEyebrow { margin:0; color:var(--blue); font-size:12px; font-weight:750; letter-spacing:.12em; text-transform:uppercase; }
@@ -79,8 +80,8 @@ nav a:hover,nav a.active { color:var(--blue); }
 .contactForm input:focus,.contactForm textarea:focus { border-color:var(--blue); }
 .sendButton { display:flex; align-items:center; justify-content:center; min-height:50px; border-radius:6px; color:var(--blue); text-transform:uppercase; font-size:12px; font-weight:750; box-shadow:6px 6px 13px var(--shadow-dark),-6px -6px 13px var(--shadow-light); }
 footer { width:min(1050px,calc(100% - 48px)); margin:40px auto 0; padding:60px 0 45px; border-top:1px solid rgba(80,90,99,.15); display:flex; flex-direction:column; align-items:center; gap:14px; text-align:center; color:var(--muted); font-size:13px; }
-.footerLogo { width:110px; height:76px; padding:7px; border-radius:8px; display:grid; place-items:center; box-shadow:6px 6px 13px var(--shadow-dark),-6px -6px 13px var(--shadow-light); }
-.footerLogo img { width:100%; height:100%; object-fit:contain; mix-blend-mode:multiply; }
+.footerLogo { width:180px; height:125px; padding:10px; border-radius:12px; display:grid; place-items:center; overflow:hidden; background:linear-gradient(145deg,#f7fbfe,#e6f0f5); box-shadow:6px 6px 13px var(--shadow-dark),-6px -6px 13px var(--shadow-light); }
+.footerLogo img { width:160px; height:auto; display:block; object-fit:contain; mix-blend-mode:multiply; }
 footer p { margin:6px 0 0; }
 footer span { font-size:11px; }
 @media(max-width:900px){
