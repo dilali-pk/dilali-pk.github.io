@@ -37,12 +37,12 @@ nav a:hover,nav a.active { color:var(--blue); }
 .sectionHeading>p { margin:0 0 10px; color:var(--blue); text-transform:uppercase; letter-spacing:.16em; font-size:12px; font-weight:650; }
 .sectionHeading h2 { margin:0; font-size:46px; letter-spacing:-.045em; }
 .featureGrid { display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
-.featureCard { min-height:285px; padding:34px; position:relative; transition:.25s; }
+.featureCard { min-height:285px; padding:34px; display:flex; flex-direction:column; position:relative; transition:.25s; }
 .featureCard:hover { transform:translateY(-7px); }
 .featureIcon { display:inline-flex; color:var(--blue); font:700 18px/1 var(--font-geist-mono),monospace; margin-bottom:42px; }
 .featureCard h3 { margin:0 0 15px; font-size:22px; line-height:1.2; letter-spacing:-.03em; }
 .featureCard p { margin:0; color:var(--muted); font-size:14px; line-height:1.6; }
-.arrow { position:absolute; left:34px; bottom:25px; color:var(--blue); font-size:22px; }
+.arrow { align-self:flex-start; margin-top:auto; padding-top:22px; color:var(--blue); font-size:22px; line-height:1; }
 .sectionIntro { max-width:720px; margin:-22px 0 38px; color:var(--muted); font-size:16px; line-height:1.7; }
 .processSection { padding-top:95px; }
 .processGrid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
