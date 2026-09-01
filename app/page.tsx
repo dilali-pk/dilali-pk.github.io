@@ -18,14 +18,14 @@ export default function Home() {
       <section className="hero" id="home">
         <div className="heroLeft">
           <div className="softCard heroIntro">
-            <p className="welcome">NetSuite solutions that make work easier</p>
+            <p className="welcome">Technical solutions built around real business processes</p>
             <h1>Hi, I’m <span>Dilshad</span></h1>
-            <h2><b>a</b> NetSuite Developer.</h2>
-            <p className="lead">I help teams get more out of NetSuite. Whether it’s removing a repetitive step, improving a saved search or connecting another system, I focus on solutions that are practical, easy to maintain and useful in day-to-day work.</p>
+            <h2>NetSuite Developer <b>&amp;</b><br />Techno-Functional Consultant.</h2>
+            <p className="lead">I work across both sides of NetSuite: understanding how finance and operations teams use the system, then turning those requirements into reliable technical solutions. From SuiteScript and integrations to workflows, saved searches and functional configuration, I build solutions that fit the process, data and people behind them.</p>
             <div className="quickFacts">
-              <p><span>▣</span> NetSuite Developer</p>
-              <p><span>⌘</span> SuiteScript, workflows and integrations</p>
-              <p><span>⌖</span> Pakistan</p>
+              <p><span>▣</span> NetSuite development and configuration</p>
+              <p><span>⌘</span> SuiteScript, APIs, SuiteFlow and SuiteAnalytics</p>
+              <p><span>◎</span> Technical delivery with functional understanding</p>
             </div>
           </div>
           <div className="softCard heroActions">
